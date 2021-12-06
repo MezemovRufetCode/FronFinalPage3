@@ -47,4 +47,12 @@ $(document).ready(function () {
     $(this).next().slideToggle();
   });
   // active row
+
+  let allHeading = document.querySelectorAll(".accordion .first .heading");
+  allHeading.forEach((head) => {
+    head.onmouseenter = function () {
+      let myicon = document.querySelectorAll(".accordion .first .heading span");
+      console.log(myicon);
+    };
+  });
 });

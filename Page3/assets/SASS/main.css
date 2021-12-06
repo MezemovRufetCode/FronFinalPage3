@@ -248,7 +248,7 @@ header .container .row .menu .menu-links ul li a {
 }
 
 #entrance .desc {
-  padding: 75px 0px;
+  padding: 70px 0px;
 }
 
 #entrance .desc h3 {
@@ -283,7 +283,7 @@ header .container .row .menu .menu-links ul li a {
   margin: 12px 0px;
   border: 1px solid lightgray;
   display: block;
-  padding: 17px 40px;
+  padding: 17px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -299,6 +299,10 @@ header .container .row .menu .menu-links ul li a {
   font-size: 12px;
   font-weight: 500;
   letter-spacing: 1px;
+}
+
+#accordion .accordion .allRow .heading p span {
+  padding-right: 10px;
 }
 
 #accordion .accordion .allRow .content {
@@ -331,7 +335,7 @@ header .container .row .menu .menu-links ul li a {
   margin: 12px 0px;
   border-bottom: 1px solid #ececec;
   display: block;
-  padding: 17px 40px;
+  padding: 17px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -346,6 +350,10 @@ header .container .row .menu .menu-links ul li a {
   font-size: 12px;
   font-weight: 500;
   letter-spacing: 1px;
+}
+
+#accordion .accordionSec .allRow .heading p span {
+  padding-right: 10px;
 }
 
 #accordion .accordionSec .allRow .content {

@@ -192,7 +192,7 @@ header {
 #entrance {
   background-color: #fafaf9;
   .desc {
-    padding: 75px 0px;
+    padding: 70px 0px;
     h3 {
       font-size: 50px;
       line-height: 1.32em;
@@ -218,13 +218,16 @@ header {
         margin: 12px 0px;
         border: 1px solid lightgray;
         display: block;
-        padding: 17px 40px;
+        padding: 17px;
         transition: 0.3s;
         &:hover {
           background-color: #f34f3f;
           color: white;
         }
         p {
+          span {
+            padding-right: 10px;
+          }
           font-family: "Montserrat", sans-serif;
           margin: 0px;
           font-size: 12px;
@@ -254,12 +257,15 @@ header {
         margin: 12px 0px;
         border-bottom: 1px solid rgb(236, 236, 236);
         display: block;
-        padding: 17px 40px;
+        padding: 17px;
         transition: 0.3s;
         &:hover {
           color: #f34f3f;
         }
         p {
+          span {
+            padding-right: 10px;
+          }
           font-family: "Montserrat", sans-serif;
           margin: 0px;
           font-size: 12px;
