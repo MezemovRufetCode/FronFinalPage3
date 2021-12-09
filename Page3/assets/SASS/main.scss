@@ -204,10 +204,17 @@ header {
 }
 #accordion {
   .accordion {
-    padding-top: 100px;
+    padding-top: 70px;
     padding-bottom: 100px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    .first {
+      padding-top: 40px;
+    }
+    .second {
+      padding-top: 40px;
+    }
     .allRow {
       margin: 0 15px;
       .active {
@@ -244,10 +251,17 @@ header {
     }
   }
   .accordionSec {
-    padding-top: 100px;
+    padding-top: 70px;
     padding-bottom: 100px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    .first {
+      padding-top: 40px;
+    }
+    .second {
+      padding-top: 40px;
+    }
     .allRow {
       margin: 0 15px;
       .active {

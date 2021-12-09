@@ -27,32 +27,92 @@ $(document).ready(function () {
   });
 
   //accordion
-  $(".accordion .first .heading").click(function () {
-    $(".accordion .first .content").not($(this).next()).slideUp();
-    $(this).next().slideToggle();
+
+  $(".accordion .first .allrowFirst .heading").on("click", function () {
+    if ($(this).hasClass("active")) {
+      $(this).removeClass("active");
+      $(this).siblings(".allrowFirst .content").slideUp(200);
+      $(".first .allrowFirst .heading i")
+        .removeClass("fa-minus")
+        .addClass("fa-plus");
+    } else {
+      $(".first .allrowFirst .heading i")
+        .removeClass("fa-minus")
+        .addClass("fa-plus");
+      $(this).find("i").removeClass("fa-plus").addClass("fa-minus");
+      $(".first .allrowFirst .heading").removeClass("active");
+      $(this).addClass("active");
+      $(".first .allrowFirst .content").slideUp(200);
+      $(this).siblings(".allrowFirst .content").slideDown(200);
+    }
   });
 
-  $(".accordion .second .heading").click(function () {
-    $(".accordion .second .content").not($(this).next()).slideUp();
-    $(this).next().slideToggle();
+  // let allHeading = document.querySelectorAll(".accordion .first .heading");
+  // allHeading.forEach((head) => {
+  //   if (!head.classList.contains("active")) {
+  //     head.onmouseenter = function () {
+  //       this.querySelector("span").innerHTML = "<i class='fas fa-minus'></i>";
+  //     };
+  //     head.onmouseleave = function () {
+  //       this.querySelector("span").innerHTML = "<i class='fas fa-plus'></i>";
+  //     };
+  //   }
+  // });
+
+  $(".accordion .second .allrowSecond .heading").on("click", function () {
+    if ($(this).hasClass("active")) {
+      $(this).removeClass("active");
+      $(this).siblings(".allrowSecond .content").slideUp(200);
+      $(".second .allrowSecond .heading i")
+        .removeClass("fa-minus")
+        .addClass("fa-plus");
+    } else {
+      $(".second .allrowSecond .heading i")
+        .removeClass("fa-minus")
+        .addClass("fa-plus");
+      $(this).find("i").removeClass("fa-plus").addClass("fa-minus");
+      $(".second .allrowSecond .heading").removeClass("active");
+      $(this).addClass("active");
+      $(".second .allrowSecond .content").slideUp(200);
+      $(this).siblings(".allrowSecond .content").slideDown(200);
+    }
   });
 
-  $(".accordionSec .first .heading").click(function () {
-    $(".accordionSec .first .content").not($(this).next()).slideUp();
-    $(this).next().slideToggle();
+  $(".accordionSec .first .allrowThird .heading").on("click", function () {
+    if ($(this).hasClass("active")) {
+      $(this).removeClass("active");
+      $(this).siblings(".allrowThird .content").slideUp(200);
+      $(".first .allrowThird .heading i")
+        .removeClass("fa-minus")
+        .addClass("fa-plus");
+    } else {
+      $(".first .allrowThird .heading i")
+        .removeClass("fa-minus")
+        .addClass("fa-plus");
+      $(this).find("i").removeClass("fa-plus").addClass("fa-minus");
+      $(".first .allrowThird .heading").removeClass("active");
+      $(this).addClass("active");
+      $(".first .allrowThird .content").slideUp(200);
+      $(this).siblings(".allrowThird .content").slideDown(200);
+    }
   });
 
-  $(".accordionSec .second .heading").click(function () {
-    $(".accordionSec .second .content").not($(this).next()).slideUp();
-    $(this).next().slideToggle();
-  });
-  // active row
-
-  let allHeading = document.querySelectorAll(".accordion .first .heading");
-  allHeading.forEach((head) => {
-    head.onmouseenter = function () {
-      let myicon = document.querySelectorAll(".accordion .first .heading span");
-      console.log(myicon);
-    };
+  $(".accordionSec .second .allrowFourth .heading").on("click", function () {
+    if ($(this).hasClass("active")) {
+      $(this).removeClass("active");
+      $(this).siblings(".allrowFourth .content").slideUp(200);
+      $(".second .allrowFourth .heading i")
+        .removeClass("fa-minus")
+        .addClass("fa-plus");
+    } else {
+      $(".second .allrowFourth .heading i")
+        .removeClass("fa-minus")
+        .addClass("fa-plus");
+      $(this).find("i").removeClass("fa-plus").addClass("fa-minus");
+      $(".second .allrowFourth .heading").removeClass("active");
+      $(this).addClass("active");
+      $(".second .allrowFourth .content").slideUp(200);
+      $(this).siblings(".allrowFourth .content").slideDown(200);
+    }
   });
 });

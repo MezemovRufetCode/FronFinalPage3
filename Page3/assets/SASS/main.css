@@ -260,14 +260,24 @@ header .container .row .menu .menu-links ul li a {
 }
 
 #accordion .accordion {
-  padding-top: 100px;
+  padding-top: 70px;
   padding-bottom: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+#accordion .accordion .first {
+  padding-top: 40px;
+}
+
+#accordion .accordion .second {
+  padding-top: 40px;
 }
 
 #accordion .accordion .allRow {
@@ -313,14 +323,24 @@ header .container .row .menu .menu-links ul li a {
 }
 
 #accordion .accordionSec {
-  padding-top: 100px;
+  padding-top: 70px;
   padding-bottom: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+#accordion .accordionSec .first {
+  padding-top: 40px;
+}
+
+#accordion .accordionSec .second {
+  padding-top: 40px;
 }
 
 #accordion .accordionSec .allRow {
